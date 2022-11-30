@@ -1,0 +1,35 @@
+@media (max-width: 991px) {
+  /* Xây dựng phần Navbar */
+  #nav-bar img {
+    display: none; /* xóa ảnh */
+  }
+  .nav-item {
+    font-size: small;
+  }
+  .nav1245 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  /* Xây dựng phần Thông tin nghề nghiệp */
+  .hobby {
+    padding-bottom: 5rem;
+  }
+
+  /* Xây dựng phần Chứng chỉ - Giải thưởng */
+  .certificate {
+    padding-bottom: 3rem;
+  }
+  .cert-title {
+    margin-top: 1rem;
+  }
+
+  /* Xây dựng phần Dự án */
+  .project-icon i {
+    display: inline-block; /* làm icon và text luôn cùng hàng với nhau */
+  }
+  .project-brief {
+    display: flex; /* chuyển số năm và icon nằm ngang nhau */
+    align-items: center;
+  }
+}

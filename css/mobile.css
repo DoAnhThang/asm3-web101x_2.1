@@ -1,0 +1,74 @@
+@media (max-width: 767px) {
+  /* Xây dựng phần ảnh banner */
+  #banner .container-fluid {
+    height: 100vh;
+  }
+
+  /* Xây dựng phần Navbar */
+  .nav-item {
+    border: 0;
+    font-size: smaller;
+  }
+  .nav-item:nth-child(2),
+  .nav-item:last-child {
+    border-right: 0; /* xóa đường kẻ dọc bên phải */
+  }
+  .nav1245 {
+    padding: 0.5rem;
+    font-weight: 550;
+  }
+  #nav-bar .container {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 0;
+  }
+
+  /* Xây dựng phần Thông tin cá nhân */
+  #target,
+  #personal-info {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  /* Xây dựng phần Chứng chỉ - Giải thưởng */
+  .certificate {
+    padding-bottom: 0;
+    border-bottom: 0; /* xóa đường kẻ cũ ở dưới */
+  }
+  .cert-1 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .cert-1 .cert-details {
+    padding-bottom: 3rem;
+    border-bottom: 1px solid orange; /* thêm đường kẻ mới ở dưới cert-1 */
+  }
+  .cert-2 {
+    border-left: 0; /* xóa đường kẻ cũ bên trái */
+    padding-top: 3rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .cert-2 .cert-details {
+    padding-bottom: 3rem;
+    border-bottom: 1px solid orange; /* thêm đường kẻ mới ở dưới cert-2 */
+  }
+  .cert-3 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  /* Xây dựng phần Dự án */
+  .project a {
+    font-weight: normal;
+  }
+  .project-1,
+  .project-2 {
+    margin-bottom: 3rem;
+  }
+
+  /* Xây dựng phần Liên hệ */
+  #footer span {
+    display: none; /* loại bỏ phần text */
+  }
+}

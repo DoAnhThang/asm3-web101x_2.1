@@ -1,0 +1,192 @@
+/* Utilities */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "fontello", sans-serif;
+}
+.bg-grey {
+  background: #f7f7f7;
+}
+i {
+  color: #339af0;
+}
+
+/* Xây dựng phần Banner */
+#banner .container-fluid {
+  height: 50vh;
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.6),
+      rgba(34, 34, 34, 0.6)
+    ),
+    url("../images/banner.jpg"); /* làm tối ảnh banner */
+  background-size: cover; /* đặt banner bao phủ toàn bộ chiều rộng vùng chứa */
+  background-position-x: center; /* căn giữa background-image responsive */
+  position: relative;
+}
+.banner-text {
+  position: absolute; /* định vị trí tuyệt đối cho text box */
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+/* Xây dựng phần Navbar */
+.nav-item {
+  border-left: 1px solid #dee2e6; /* tạo đường kẻ dọc bên trái */
+}
+.nav-item:nth-child(3) {
+  border-left: 0;
+}
+.nav-item:nth-child(2),
+.nav-item:last-child {
+  border-right: 1px solid #dee2e6; /* tạo đường kẻ dọc bên phải */
+}
+.nav1245 {
+  padding: 1rem;
+  font-weight: bold;
+}
+/* (Nâng cao) Bổ sung ảnh cá nhân */
+#nav-bar img {
+  width: 22px;
+  transform: scale(5); /* tăng kích thước ảnh đè lên các thành phần khác */
+}
+
+/* Xây dựng phần Thông tin cá nhân */
+#target,
+#personal-info {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+/* Xây dựng phần Thông tin nghề nghiệp */
+#job-info .container .sub-job-info {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: auto 1fr; /* chiều cao: hàng 1 tự động, hàng 2 còn lại */
+  border: 2px solid #e9ecef;
+}
+.job-info {
+  grid-column: 1/-1; /* đặt hàng 2 rộng toàn bộ row */
+}
+
+/* thêm bullet trước các đề mục */
+#job-info .container ul li {
+  position: relative;
+}
+#job-info .container ul li::before {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: #339af0;
+  border-radius: 50%;
+  border: 2px solid #e9ecef;
+  left: -30px;
+  top: 5px;
+}
+
+#job-info .container .job-info-icon {
+  padding-top: 2.8rem;
+  color: #868e96;
+}
+.time {
+  font-size: 14px;
+  color: #868e96;
+  margin-bottom: 12px;
+}
+.job-info-text {
+  font-size: 14px;
+  color: #868e96;
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+/* Xây dựng phần Kỹ năng và Ngôn ngữ */
+#job-info .container .skill-language {
+  display: inline-block; /* chuyển sang inline-block để loại bỏ grid trước đó và mở rộng kích thước */
+  border: 0; /* loại bỏ border trước đó */
+}
+.skill-language p {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+.skill-language span {
+  display: inline-block; /* làm các thang điểm span nằm liền kề nhau */
+  background-color: #339af0;
+  height: 2px;
+  width: 44px;
+  margin-right: 12px;
+  margin-bottom: 32px;
+}
+.skill-language div span:last-child {
+  margin-right: 0;
+}
+.skill-language .grey-line {
+  background-color: #e9ecef;
+}
+
+/* Xây dựng phần Sở thích */
+.grid-hobby i {
+  width: 48px;
+  height: 48px;
+  padding-top: 11px;
+  border: 1px solid #339af0;
+  text-align: center;
+}
+.grid-hobby p {
+  color: #868e96;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Xây dựng phần Chứng chỉ - Giải thưởng */
+.cert-title {
+  font-size: 14px;
+}
+.cert-details {
+  font-size: 13px;
+}
+/* thêm 2 đường kẻ màu cam */
+.certificate {
+  padding-bottom: 3rem;
+  border-bottom: 1px solid orange;
+}
+.cert-2 {
+  border-left: 1px solid orange;
+}
+
+/* Xây dựng phần Dự án */
+.project a {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+}
+.project-brief {
+  display: flex;
+  align-items: center;
+}
+.project-brief .year {
+  font-size: 12px;
+  background-color: #339af0;
+  border-radius: 16px;
+}
+.project-brief i {
+  color: #868e96;
+  font-size: 14px;
+  font-style: normal;
+  margin-right: 12px;
+}
+.project table td {
+  font-size: 14px;
+  color: #868e96;
+  padding: 12px;
+  vertical-align: top; /* căn top cho các đề mục đầu bảng */
+}
+.project table td:first-child {
+  width: 30%; /* tăng độ rộng */
+}
+#project img {
+  width: calc(100% + 2px); /* tăng độ rộng ảnh để đè lên border như mẫu */
+  margin: 0 -1px;
+}
